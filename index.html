@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Events | Investor Pitch</title>
+    <style>
+        :root {
+            --primary-color: #0f172a;
+            --accent-color: #3b82f6;
+            --text-light: #f8fafc;
+            --text-dark: #334155;
+            --bg-light: #f1f5f9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=1920&q=80') center/cover;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--text-light);
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            max-width: 800px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 600px;
+            color: #cbd5e1;
+        }
+
+        .cta-btn {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #2563eb;
+        }
+
+        /* Section Formatting */
+        section {
+            padding: 5rem 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        /* Vision Section */
+        .vision-content {
+            display: flex;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .vision-text {
+            flex: 1;
+        }
+
+        .vision-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+
+        /* Services Grid */
+        .services {
+            background-color: var(--bg-light);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+
+        .contact-info {
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>Nexus Events</h1>
+        <ul>
+            <li><a href="#vision">The Vision</a></li>
+            <li><a href="#services">Platform Capabilities</a></li>
+            <li><a href="#contact">Investor Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h2>Next-Generation Event Architecture</h2>
+        <p>We are building a highly scalable, AI-augmented platform that transforms static event planning into dynamic, real-time experiences.</p>
+        <a href="#contact" class="cta-btn">View Pitch Deck</a>
+    </header>
+
+    <section id="vision">
+        <h2 class="section-title">The Vision</h2>
+        <div class="vision-content">
+            <div class="vision-text">
+                <h3>Beyond Traditional Management</h3>
+                <p>The event industry is currently bottlenecked by fragmented tools and manual coordination. Our vision is to engineer a unified ecosystem powered by robust backend systems and intelligent automation. We aim to support massive concurrent user loads seamlessly, ensuring organizers can deploy large-scale events with zero latency in communication and logistics.</p>
+                <br>
+                <p>By leveraging applied AI and real-time data synchronization, we provide predictive insights and instant execution, allowing stakeholders to focus on experience rather than administrative overhead.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2 class="section-title">Platform Capabilities</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Real-Time Coordination</h3>
+                <p>Utilizing high-performance socket architectures, our platform delivers instant messaging, live polling, and on-the-fly itinerary updates to thousands of attendees simultaneously.</p>
+            </div>
+            <div class="service-card">
+                <h3>AI-Driven Matching</h3>
+                <p>Intelligent routing algorithms that instantly match organizers with the optimal vendors, sponsors, and venues based on historical data and predictive modeling.</p>
+            </div>
+            <div class="service-card">
+                <h3>Scalable Ticketing Engine</h3>
+                <p>A resilient financial processing layer designed to handle extreme traffic spikes during high-demand ticket releases without downtime or queue failures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Partner With Us</h2>
+        <p>We are currently opening our seed round. Let's discuss the underlying technology, the market opportunity, and our long-term roadmap.</p>
+        <div class="contact-info">
+            <p><strong>Founder:</strong> [Your Name]</p>
+            <p><strong>Email:</strong> founder@nexusevents.com</p>
+            <p><strong>Location:</strong> Pune, India</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nexus Events. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
